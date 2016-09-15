@@ -1,0 +1,155 @@
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\ApplicationInsights.config
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\csc.exe
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\System.Collections.Immutable.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\vbc.exe
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\VBCSCompiler.exe
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\VBCSCompiler.exe.config
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\WebApi_Authorization_Demo.dll.config
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\WebApi_Authorization_Demo.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\WebApi_Authorization_Demo.pdb
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Antlr3.Runtime.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.Web.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.WindowsServer.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.ApplicationInsights.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Security.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Web.Infrastructure.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Newtonsoft.Json.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Owin.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Net.Http.Formatting.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Helpers.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Http.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Http.Owin.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Http.WebHost.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Mvc.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Optimization.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Razor.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.WebPages.Deployment.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.WebPages.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.WebPages.Razor.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\WebGrease.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.Web.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.WindowsServer.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.ApplicationInsights.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Security.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Http.Owin.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Newtonsoft.Json.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Net.Http.Formatting.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Helpers.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Http.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Http.WebHost.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Mvc.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Optimization.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Razor.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.WebPages.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.WebPages.Deployment.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.WebPages.Razor.xml
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Antlr3.Runtime.pdb
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\obj\Debug\WebApi_Authorization_Demo.dll
+c:\users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\obj\Debug\WebApi_Authorization_Demo.pdb
+C:\Users\gx173\documents\visual studio 2015\Projects\WebApi_Authorization_Demo\WebApi_Authorization_Demo\obj\Debug\WebApi_Authorization_Demo.csprojResolveAssemblyReference.cache
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\ApplicationInsights.config
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\csc.exe
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\System.Collections.Immutable.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\System.Reflection.Metadata.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\vbc.exe
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\VBCSCompiler.exe
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\roslyn\VBCSCompiler.exe.config
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\WebApi_Authorization_Demo.dll.config
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\WebApi_Authorization_Demo.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\WebApi_Authorization_Demo.pdb
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Antlr3.Runtime.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.Agent.Intercept.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.DependencyCollector.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.Web.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.WindowsServer.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.ApplicationInsights.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AspNet.Identity.Core.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Security.Cookies.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Security.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Security.OAuth.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Web.Infrastructure.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Newtonsoft.Json.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Owin.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Net.Http.Formatting.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Helpers.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Http.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Http.Owin.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Http.WebHost.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Mvc.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Optimization.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Razor.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.WebPages.Deployment.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.WebPages.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.WebPages.Razor.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\WebGrease.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.DependencyCollector.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.Web.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AI.WindowsServer.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.ApplicationInsights.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AspNet.Identity.Core.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Security.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Security.Cookies.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Microsoft.Owin.Security.OAuth.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Http.Owin.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Newtonsoft.Json.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Net.Http.Formatting.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Helpers.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Http.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Http.WebHost.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Mvc.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Optimization.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Razor.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.WebPages.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.WebPages.Deployment.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.WebPages.Razor.xml
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\Antlr3.Runtime.pdb
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\obj\Debug\WebApi_Authorization_Demo.csprojResolveAssemblyReference.cache
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\obj\Debug\WebApi_Authorization_Demo.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\obj\Debug\WebApi_Authorization_Demo.pdb
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Cors.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Http.Cors.dll
+D:\work\Projects\Visual_Studio\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\System.Web.Http.Cors.xml
