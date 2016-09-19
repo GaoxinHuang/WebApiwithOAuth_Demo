@@ -59,7 +59,6 @@ namespace WebApi_Authorization_Demo.Authorization
 
         public async override Task GrantRefreshToken(OAuthGrantRefreshTokenContext context)
         {
-
             var originalClient = context.Ticket.Properties.Dictionary["as:client_id"];
             var currentClient = context.ClientId;
 
@@ -68,7 +67,6 @@ namespace WebApi_Authorization_Demo.Authorization
                 context.Rejected();
                 return;
             }
-
             var newId = new ClaimsIdentity(context.Ticket.Identity);
             var newClaim = newId.Claims.Where(c => c.Value == context.ClientId).FirstOrDefault();
 

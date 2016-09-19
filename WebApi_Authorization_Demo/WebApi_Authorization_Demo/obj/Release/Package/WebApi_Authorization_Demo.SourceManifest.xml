@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\work\MyAPI\！！Programming\C#\WebAPI\安全性\Core\MyExample\WebApi_Authorization_Demo\WebApi_Authorization_Demo\obj\Release\Package\PackageTmp" />
+  <setAcl path="D:\work\MyAPI\！！Programming\C#\WebAPI\安全性\Core\MyExample\WebApi_Authorization_Demo\WebApi_Authorization_Demo\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="D:\work\MyAPI\！！Programming\C#\WebAPI\安全性\Core\MyExample\WebApi_Authorization_Demo\WebApi_Authorization_Demo\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

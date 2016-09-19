@@ -29,6 +29,7 @@ namespace WebApi_Authorization_Demo.Authorization
             context.Ticket.Properties.ExpiresUtc = user.ExpiresUtc;
             user.RefreshTicket = context.SerializeTicket();
             context.SetToken(tokenValue);
+            //await CreateAsync(context); //不能加,不然就报错
         }
 
         public async override Task ReceiveAsync(AuthenticationTokenReceiveContext context)
@@ -38,6 +39,7 @@ namespace WebApi_Authorization_Demo.Authorization
             {
                 context.DeserializeTicket(user.RefreshTicket);
             }
+            //await ReceiveAsync(context);//不能加,不然就报错
         }
     }
 }

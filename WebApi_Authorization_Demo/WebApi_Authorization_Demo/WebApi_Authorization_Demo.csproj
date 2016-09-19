@@ -275,7 +275,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\oauthoriztion - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\oauthoriztion - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\oauthoriztion - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\oauthoriztion - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
