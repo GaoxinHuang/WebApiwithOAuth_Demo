@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Web;
 using System.Web.Http;
 using System.Web.Http.Cors;
 using System.Web.Http.Results;
@@ -124,7 +125,10 @@ namespace WebApi_Authorization_Demo.Controllers
         {
             using (HttpClient httpClient = new HttpClient())
             {
-                httpClient.BaseAddress = new Uri("http://localhost:10995");
+                //httpClient.BaseAddress = new Uri("http://testing.para.co.nz");
+               
+                string host =String.Format("http://{1}:{2}",Request.RequestUri.HostNameType, Request.RequestUri.Host,Request.RequestUri.Port);
+                httpClient.BaseAddress = new Uri(host);
                 httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(
                     "Basic", clientCode);
                 //httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(

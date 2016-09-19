@@ -22,7 +22,7 @@ namespace WebApi_Authorization_Demo.Authorization
                 return;
             }
 
-            if (!LocalStorage.Users.Any(u => u.Username.Equals(clientId, StringComparison.OrdinalIgnoreCase) || clientSecret != "Godfrey"))
+            if (!LocalStorage.Users.Any(u => u.Username.Equals(clientId, StringComparison.OrdinalIgnoreCase)) || clientSecret != "Godfrey")
             {
                 return;
             }
@@ -39,7 +39,8 @@ namespace WebApi_Authorization_Demo.Authorization
             //string username = context.UserName; 
             //string password = context.Password;
             string username = context.OwinContext.Get<string>("as:username");
-            string password = context.OwinContext.Get<string>("as:password");
+            string password = context.OwinContext.Get<string>("as:password"); 
+            //验证账号密码,可以不要,因为在create里有写
             if (!LocalStorage.Users.Any(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase) && u.Password == password))
             {
                 return;
@@ -91,5 +92,23 @@ namespace WebApi_Authorization_Demo.Authorization
         //    }
         //    return Task.FromResult<object>(null);
         //}
+
+        /// <summary>
+        /// grant_type=client_credentials 
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns></returns>
+        public override Task GrantClientCredentials(OAuthGrantClientCredentialsContext context)
+        {
+            #region Old Token
+
+            var oAuthIdentity = new ClaimsIdentity(context.Options.AuthenticationType);
+            oAuthIdentity.AddClaim(new Claim(ClaimTypes.Name, context.ClientId));
+            var ticket = new AuthenticationTicket(oAuthIdentity, new AuthenticationProperties());
+            context.Validated(ticket);
+
+            return base.GrantClientCredentials(context);
+            #endregion
+        }
     }
 }

@@ -17,7 +17,6 @@ namespace WebApi_Authorization_Demo.Authorization
     {
         public override void OnActionExecuting(HttpActionContext actionContext)
         {
-
             base.OnActionExecuting(actionContext);
             if (actionContext.ActionDescriptor.GetCustomAttributes<AllowAnonymousAttribute>().Any())
             {
