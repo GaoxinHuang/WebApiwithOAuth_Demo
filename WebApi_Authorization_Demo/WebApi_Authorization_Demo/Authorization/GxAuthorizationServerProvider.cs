@@ -104,7 +104,11 @@ namespace WebApi_Authorization_Demo.Authorization
 
             var oAuthIdentity = new ClaimsIdentity(context.Options.AuthenticationType);
             oAuthIdentity.AddClaim(new Claim(ClaimTypes.Name, context.ClientId));
-            var ticket = new AuthenticationTicket(oAuthIdentity, new AuthenticationProperties());
+            var props = new AuthenticationProperties(new Dictionary<string, string>
+                {
+                    { "as:client_id", context.ClientId }
+                });
+            var ticket = new AuthenticationTicket(oAuthIdentity, props);
             context.Validated(ticket);
 
             return base.GrantClientCredentials(context);
