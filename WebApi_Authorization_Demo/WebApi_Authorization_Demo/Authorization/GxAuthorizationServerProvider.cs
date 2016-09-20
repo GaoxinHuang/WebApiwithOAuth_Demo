@@ -27,26 +27,26 @@ namespace WebApi_Authorization_Demo.Authorization
                 return;
             }
             string username = context.Parameters.Get("username");
-            string password = context.Parameters.Get("password");
+            //string password = context.Parameters.Get("password");
             context.OwinContext.Set<string>("as:username", username);
-            context.OwinContext.Set<string>("as:password", password);
+            //context.OwinContext.Set<string>("as:password", password);
             context.Validated(clientId);
             await base.ValidateClientAuthentication(context);
         }
 
         public async override Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
-            //string username = context.UserName; 
-            //string password = context.Password;
-            string username = context.OwinContext.Get<string>("as:username");
-            string password = context.OwinContext.Get<string>("as:password"); 
-            //验证账号密码,可以不要,因为在create里有写
+            //验证账号和密码
+            string username = context.UserName; //获取参数中的账号
+            string password = context.Password; //获取参数中的密码
+            //string username = context.OwinContext.Get<string>("as:username");
+            //string password = context.OwinContext.Get<string>("as:password"); 
             if (!LocalStorage.Users.Any(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase) && u.Password == password))
             {
                 return;
             }
             var oAuthIdentity = new ClaimsIdentity(context.Options.AuthenticationType);
-            
+
             oAuthIdentity.AddClaim(new Claim(ClaimTypes.Name, username));
             var props = new AuthenticationProperties(new Dictionary<string, string>
                 {

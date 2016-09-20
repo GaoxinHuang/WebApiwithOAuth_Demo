@@ -26,24 +26,24 @@ namespace WebApi_Authorization_Demo.Controllers
             {
                 return Ok(new { success = false, data = new { error = "incorrect input" } });
             }
+
+            var hearderAuthorization = Request.Headers.Authorization;
+            if (!hearderAuthorization.Scheme.Equals("Basic", StringComparison.OrdinalIgnoreCase))
+            {
+                return Ok(new { success = false, data = new { error = "invalid_client" } });
+            }
+            if (LocalStorage.Users.Any(u => u.Username.Equals(model.Username, StringComparison.OrdinalIgnoreCase)))
+            {
+                return Ok(new { success = false, data = new { error = "the username exists" } });
+            }
+            User newUser = new User
+            {
+                Username = model.Username,
+                Password = model.Password
+            };
+            LocalStorage.Users.Add(newUser);
             try
             {
-                var hearderAuthorization = Request.Headers.Authorization;
-                if (!hearderAuthorization.Scheme.Equals("Basic", StringComparison.OrdinalIgnoreCase))
-                {
-                    return Ok(new { success = false, data = new { error = "invalid_client" } });
-                }
-                if (LocalStorage.Users.Any(u => u.Username.Equals(model.Username, StringComparison.OrdinalIgnoreCase)))
-                {
-                    return Ok(new { success = false, data = new { error = "the username exists" } });
-                }
-                User newUser = new User
-                {
-                    Username = model.Username,
-                    Password = model.Password
-                };
-                LocalStorage.Users.Add(newUser);
-
                 string clientCode = hearderAuthorization.Parameter;
                 JObject resultData = await SetToken(newUser, clientCode, "password");
                 if ((Boolean)resultData.SelectToken("success"))
@@ -55,10 +55,15 @@ namespace WebApi_Authorization_Demo.Controllers
                     LocalStorage.Users.Remove(newUser);
                     return Ok(resultData);
                 }
-            }catch(Exception e)
-            {
-                return Ok(new { message=e.Message,error=e.InnerException });
             }
+            catch (Exception e)
+            {
+
+                LocalStorage.Users.Remove(newUser);
+                return Ok(new { success = true, data=new { error="system has an error" } });
+            }
+
+
         }
         [HttpPost]
         public async Task<IHttpActionResult> Login(UserViewModel model)
@@ -126,8 +131,8 @@ namespace WebApi_Authorization_Demo.Controllers
             using (HttpClient httpClient = new HttpClient())
             {
                 //httpClient.BaseAddress = new Uri("http://testing.para.co.nz");
-               
-                string host =String.Format("http://{1}:{2}",Request.RequestUri.HostNameType, Request.RequestUri.Host,Request.RequestUri.Port);
+
+                string host = String.Format("http://{1}:{2}", Request.RequestUri.HostNameType, Request.RequestUri.Host, Request.RequestUri.Port);
                 httpClient.BaseAddress = new Uri(host);
                 httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(
                     "Basic", clientCode);

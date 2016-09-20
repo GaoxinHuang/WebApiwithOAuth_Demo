@@ -10,6 +10,7 @@ namespace WebApi_Authorization_Demo.Controllers
     {
         public ActionResult Index()
         {
+            
             ViewBag.Title = "Home Page";
 
             return View();

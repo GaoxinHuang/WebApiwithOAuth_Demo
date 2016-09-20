@@ -18,9 +18,10 @@ namespace WebApi_Authorization_Demo.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
-        [Authorize]
+        //[Authorize]
         public string Get()
         {
+            
             return User.Identity.Name;
         }
 
