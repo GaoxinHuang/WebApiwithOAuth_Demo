@@ -58,7 +58,6 @@ namespace WebApi_Authorization_Demo.Controllers
             }
             catch (Exception e)
             {
-
                 LocalStorage.Users.Remove(newUser);
                 return Ok(new { success = true, data=new { error="system has an error" } });
             }
@@ -131,8 +130,8 @@ namespace WebApi_Authorization_Demo.Controllers
             using (HttpClient httpClient = new HttpClient())
             {
                 //httpClient.BaseAddress = new Uri("http://testing.para.co.nz");
-
-                string host = String.Format("http://{1}:{2}", Request.RequestUri.HostNameType, Request.RequestUri.Host, Request.RequestUri.Port);
+                //string x = String.Format("http://{1}:{2}", Request.RequestUri.HostNameType, Request.RequestUri.Host, Request.RequestUri.Port);
+                string host = String.Format("http://{0}", Request.RequestUri.Authority);
                 httpClient.BaseAddress = new Uri(host);
                 httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(
                     "Basic", clientCode);

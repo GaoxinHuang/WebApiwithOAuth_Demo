@@ -27,9 +27,9 @@ namespace WebApi_Authorization_Demo.Authorization
                 return;
             }
             string username = context.Parameters.Get("username");
-            //string password = context.Parameters.Get("password");
+            string password = context.Parameters.Get("password");
             context.OwinContext.Set<string>("as:username", username);
-            //context.OwinContext.Set<string>("as:password", password);
+            context.OwinContext.Set<string>("as:password", password);
             context.Validated(clientId);
             await base.ValidateClientAuthentication(context);
         }
