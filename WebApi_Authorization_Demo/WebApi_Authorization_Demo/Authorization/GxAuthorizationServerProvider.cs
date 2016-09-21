@@ -59,7 +59,7 @@ namespace WebApi_Authorization_Demo.Authorization
 
         public async override Task GrantRefreshToken(OAuthGrantRefreshTokenContext context)
         {
-            #region 验证是否在授权服务里面
+            #region 验证是否在授权服务里面,注:如果有同一个username可能,就不能用这个
             var originalClient = context.Ticket.Properties.Dictionary["as:client_id"];
             var currentClient = context.ClientId;
 
