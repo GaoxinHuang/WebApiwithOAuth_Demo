@@ -48,21 +48,25 @@ namespace WebApi_Authorization_Demo.Authorization
                     return;
                 }
             }
-            username = parameter["model"];
-            if (username!=null)
+            //username = parameter["model"]; 这样也可以
+            if (parameter.TryGetValue("model",out username))
             {
-                JObject model = JObject.FromObject(username); //用Json Object 代替转化所有的View
-                string getUsername = (string)model.SelectToken("Username");
-                if (LocalStorage.Users.Any(u => u.AccessToken.Equals(clientCode, StringComparison.Ordinal) && u.Username.Equals(getUsername, StringComparison.OrdinalIgnoreCase)))
+                if (username != null)
                 {
-                    return;
-                }
-                else
-                {
-                    actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.OK, new { success = false, data = new { error = "Your account login another place" } });
-                    return;
+                    JObject model = JObject.FromObject(username); //用Json Object 代替转化所有的View
+                    string getUsername = (string)model.SelectToken("Username");
+                    if (LocalStorage.Users.Any(u => u.AccessToken.Equals(clientCode, StringComparison.Ordinal) && u.Username.Equals(getUsername, StringComparison.OrdinalIgnoreCase)))
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.OK, new { success = false, data = new { error = "Your account login another place" } });
+                        return;
+                    }
                 }
             }
+           
 
         }
     }
