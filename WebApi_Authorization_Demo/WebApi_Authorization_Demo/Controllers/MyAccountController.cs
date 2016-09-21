@@ -107,7 +107,7 @@ namespace WebApi_Authorization_Demo.Controllers
             {
                 return Ok(new { success = false, data = new { error = "invalid_client" } });
             }
-            User user = LocalStorage.Users.Where(u => u.Username.Equals(model.Username, StringComparison.OrdinalIgnoreCase) && u.Password == model.Password && u.RefreshToken == model.RefreshToken).FirstOrDefault();
+            User user = LocalStorage.Users.Where(u => u.Username.Equals(model.Username, StringComparison.OrdinalIgnoreCase) && u.RefreshToken == model.RefreshToken).FirstOrDefault();
             if (user == null)
             {
                 return Ok(new { success = false, data = new { error = "incorrect username or password or refresh token" } });
