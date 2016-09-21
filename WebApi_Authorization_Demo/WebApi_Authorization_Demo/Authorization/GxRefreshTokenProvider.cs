@@ -13,10 +13,10 @@ namespace WebApi_Authorization_Demo.Authorization
         //private static ConcurrentDictionary<string, string> _refreshTokens = new ConcurrentDictionary<string, string>();
         public async override Task CreateAsync(AuthenticationTokenCreateContext context)
         {
+            
             string username = context.OwinContext.Get<string>("as:username");
-            string password = context.OwinContext.Get<string>("as:password");
             string tokenValue = Guid.NewGuid().ToString("n");//全球唯一标识符,xxx-xx-xx-xx, n就是把"-"去掉
-            var user = LocalStorage.Users.Where(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase) && u.Password == password).FirstOrDefault();
+            var user = LocalStorage.Users.Where(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase)).FirstOrDefault();
             if (user == null)
             {
                 return;

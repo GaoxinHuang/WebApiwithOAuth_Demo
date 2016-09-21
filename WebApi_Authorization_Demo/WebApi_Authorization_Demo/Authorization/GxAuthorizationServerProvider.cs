@@ -19,17 +19,17 @@ namespace WebApi_Authorization_Demo.Authorization
 
             if (!context.TryGetBasicCredentials(out clientId, out clientSecret))
             {
+                context.Rejected();
                 return;
             }
 
             if (!LocalStorage.Users.Any(u => u.Username.Equals(clientId, StringComparison.OrdinalIgnoreCase)) || clientSecret != "Godfrey")
             {
+                context.Rejected();
                 return;
             }
             string username = context.Parameters.Get("username");
-            string password = context.Parameters.Get("password");
             context.OwinContext.Set<string>("as:username", username);
-            context.OwinContext.Set<string>("as:password", password);
             context.Validated(clientId);
             await base.ValidateClientAuthentication(context);
         }
@@ -40,9 +40,9 @@ namespace WebApi_Authorization_Demo.Authorization
             string username = context.UserName; //获取参数中的账号
             string password = context.Password; //获取参数中的密码
             //string username = context.OwinContext.Get<string>("as:username");
-            //string password = context.OwinContext.Get<string>("as:password"); 
             if (!LocalStorage.Users.Any(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase) && u.Password == password))
             {
+                context.Rejected();//可添加
                 return;
             }
             var oAuthIdentity = new ClaimsIdentity(context.Options.AuthenticationType);
@@ -59,6 +59,7 @@ namespace WebApi_Authorization_Demo.Authorization
 
         public async override Task GrantRefreshToken(OAuthGrantRefreshTokenContext context)
         {
+            #region 验证是否在授权服务里面
             var originalClient = context.Ticket.Properties.Dictionary["as:client_id"];
             var currentClient = context.ClientId;
 
@@ -66,7 +67,9 @@ namespace WebApi_Authorization_Demo.Authorization
             {
                 context.Rejected();
                 return;
-            }
+            } 
+            #endregion
+
             var newId = new ClaimsIdentity(context.Ticket.Identity);
             var newClaim = newId.Claims.Where(c => c.Value == context.ClientId).FirstOrDefault();
 
