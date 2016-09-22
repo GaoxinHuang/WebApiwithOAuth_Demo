@@ -59,7 +59,7 @@ namespace WebApi_Authorization_Demo.Controllers
             catch (Exception e)
             {
                 LocalStorage.Users.Remove(newUser);
-                return Ok(new { success = true, data=new { error="system has an error" } });
+                return Ok(new { success = true, data = new { error = "system has an error" } });
             }
 
 
@@ -84,14 +84,15 @@ namespace WebApi_Authorization_Demo.Controllers
             }
             string clientCode = hearderAuthorization.Parameter;
             JObject resultData = await SetToken(user, clientCode, "password");
-            if ((Boolean)resultData.SelectToken("success"))
-            {
-                return Ok(resultData);
-            }
-            else
-            {
-                return Ok(resultData);
-            }
+            //if ((Boolean)resultData.SelectToken("success"))
+            //{
+            //    return Ok(resultData);
+            //}
+            //else
+            //{
+            //    return Ok(resultData);
+            //}
+            return Ok(resultData);
         }
 
         [HttpPost]
