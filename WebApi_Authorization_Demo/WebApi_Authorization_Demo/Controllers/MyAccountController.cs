@@ -110,18 +110,19 @@ namespace WebApi_Authorization_Demo.Controllers
             User user = LocalStorage.Users.Where(u => u.Username.Equals(model.Username, StringComparison.OrdinalIgnoreCase) && u.RefreshToken == model.RefreshToken).FirstOrDefault();
             if (user == null)
             {
-                return Ok(new { success = false, data = new { error = "incorrect username or password or refresh token" } });
+                return Ok(new { success = false, data = new { error = "incorrect username or refresh token" } });
             }
             string clientCode = hearderAuthorization.Parameter;
             JObject resultData = await SetToken(user, clientCode, "refresh_token");
-            if ((Boolean)resultData.SelectToken("success"))
-            {
-                return Ok(resultData);
-            }
-            else
-            {
-                return Ok(resultData);
-            }
+            //if ((Boolean)resultData.SelectToken("success"))
+            //{
+            //    return Ok(resultData);
+            //}
+            //else
+            //{
+            //    return Ok(resultData);
+            //}
+            return Ok(resultData);
         }
 
 
@@ -156,7 +157,6 @@ namespace WebApi_Authorization_Demo.Controllers
                 else
                 {
                     return JObject.FromObject(new { success = false, data = responseData });
-
                 }
             }
         }

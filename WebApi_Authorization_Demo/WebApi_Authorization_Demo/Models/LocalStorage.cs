@@ -22,7 +22,6 @@ namespace WebApi_Authorization_Demo.Models
         public string RefreshToken { get; set; }
         public DateTime IssuedUtc { get; set; }
         public DateTime ExpiresUtc { get; set; }
-
         public string RefreshTicket { get; set; }
     }
 }

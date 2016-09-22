@@ -16,19 +16,19 @@ namespace WebApi_Authorization_Demo.Authorization
         {
             string clientId = String.Empty;
             string clientSecret = String.Empty;
-
+            string username = context.Parameters.Get("username");
             if (!context.TryGetBasicCredentials(out clientId, out clientSecret))
             {
                 context.Rejected();
                 return;
             }
 
-            if (!LocalStorage.Users.Any(u => u.Username.Equals(clientId, StringComparison.OrdinalIgnoreCase)) || clientSecret != "Godfrey")
+            if (clientSecret != "Godfrey" || username != clientId||!LocalStorage.Users.Any(u => u.Username.Equals(clientId, StringComparison.OrdinalIgnoreCase))  )
             {
                 context.Rejected();
                 return;
             }
-            string username = context.Parameters.Get("username");
+          
             context.OwinContext.Set<string>("as:username", username);
             context.Validated(clientId);
             await base.ValidateClientAuthentication(context);
@@ -85,14 +85,14 @@ namespace WebApi_Authorization_Demo.Authorization
         }
 
         //All Information display
-        //public override Task TokenEndpoint(OAuthTokenEndpointContext context)
-        //{
-        //    foreach (KeyValuePair<string, string> property in context.Properties.Dictionary)
-        //    {
-        //        context.AdditionalResponseParameters.Add(property.Key, property.Value);
-        //    }
-        //    return Task.FromResult<object>(null);
-        //}
+        public override Task TokenEndpoint(OAuthTokenEndpointContext context)
+        {
+            foreach (KeyValuePair<string, string> property in context.Properties.Dictionary)
+            {
+                context.AdditionalResponseParameters.Add(property.Key, property.Value);
+            }
+            return Task.FromResult<object>(null);
+        }
 
         /// <summary>
         /// grant_type=client_credentials 
