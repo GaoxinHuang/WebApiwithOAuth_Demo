@@ -23,17 +23,21 @@ namespace WebApi_Authorization_Demo.Authorization
                 return;
             }
 
-            if (clientSecret != "Godfrey" || username != clientId||!LocalStorage.Users.Any(u => u.Username.Equals(clientId, StringComparison.OrdinalIgnoreCase))  )
+            if (clientSecret != "Godfrey" || username != clientId || !LocalStorage.Users.Any(u => u.Username.Equals(clientId, StringComparison.OrdinalIgnoreCase)))
             {
                 context.Rejected();
                 return;
             }
-          
+
             context.OwinContext.Set<string>("as:username", username);
             context.Validated(clientId);
             await base.ValidateClientAuthentication(context);
         }
-
+        /// <summary>
+        ///  grant_type=password  //用于用户密码查询. 会获取用户传来的参数
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns></returns>
         public async override Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
             //验证账号和密码
@@ -57,9 +61,14 @@ namespace WebApi_Authorization_Demo.Authorization
             await base.GrantResourceOwnerCredentials(context);
         }
 
+        /// <summary>
+        /// 只在Refreash Token的时候调用
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns></returns>
         public async override Task GrantRefreshToken(OAuthGrantRefreshTokenContext context)
         {
-            #region 验证是否在授权服务里面,注:如果有同一个username可能在一个table里,就不能用这个.
+            #region 验证用户是否在授权服务里面,注:如果client_id(username)不在这个授权服务里就拒绝.
             var originalClient = context.Ticket.Properties.Dictionary["as:client_id"];
             var currentClient = context.ClientId;
 
@@ -67,7 +76,7 @@ namespace WebApi_Authorization_Demo.Authorization
             {
                 context.Rejected();
                 return;
-            } 
+            }
             #endregion
 
             var newId = new ClaimsIdentity(context.Ticket.Identity);
@@ -85,17 +94,17 @@ namespace WebApi_Authorization_Demo.Authorization
         }
 
         //All Information display
-//        public override Task TokenEndpoint(OAuthTokenEndpointContext context)
-//        {
-//            foreach (KeyValuePair<string, string> property in context.Properties.Dictionary)
-//            {
-//                context.AdditionalResponseParameters.Add(property.Key, property.Value);
-//            }
-//            return Task.FromResult<object>(null);
-//        }
+        //        public override Task TokenEndpoint(OAuthTokenEndpointContext context)
+        //        {
+        //            foreach (KeyValuePair<string, string> property in context.Properties.Dictionary)
+        //            {
+        //                context.AdditionalResponseParameters.Add(property.Key, property.Value);
+        //            }
+        //            return Task.FromResult<object>(null);
+        //        }
 
         /// <summary>
-        /// grant_type=client_credentials 
+        /// grant_type=client_credentials: 使用自己的 client证书(如 client_id及client_secret组成的 http basic验证码）来获取 access token
         /// </summary>
         /// <param name="context"></param>
         /// <returns></returns>
