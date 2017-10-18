@@ -19,7 +19,7 @@ namespace WebApi_Authorization_Demo
             {
                 TokenEndpointPath = new PathString("/token"),
                 Provider = new GxAuthorizationServerProvider(), //这个就是方法token提供者的class, 
-                AccessTokenExpireTimeSpan = TimeSpan.FromDays(14),  //设置token过期
+                AccessTokenExpireTimeSpan = TimeSpan.FromHours(1),  //设置token过期
                 AllowInsecureHttp = true,
                 RefreshTokenProvider = new GxRefreshTokenProvider()
                 //RefreshTokenProvider = IocContainer.Resolver.Resolve<CNBlogsRefreshTokenProvider>()
