@@ -85,14 +85,14 @@ namespace WebApi_Authorization_Demo.Authorization
         }
 
         //All Information display
-        public override Task TokenEndpoint(OAuthTokenEndpointContext context)
-        {
-            foreach (KeyValuePair<string, string> property in context.Properties.Dictionary)
-            {
-                context.AdditionalResponseParameters.Add(property.Key, property.Value);
-            }
-            return Task.FromResult<object>(null);
-        }
+//        public override Task TokenEndpoint(OAuthTokenEndpointContext context)
+//        {
+//            foreach (KeyValuePair<string, string> property in context.Properties.Dictionary)
+//            {
+//                context.AdditionalResponseParameters.Add(property.Key, property.Value);
+//            }
+//            return Task.FromResult<object>(null);
+//        }
 
         /// <summary>
         /// grant_type=client_credentials 

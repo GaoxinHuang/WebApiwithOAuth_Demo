@@ -311,5 +311,3 @@ E:\Work\MyAPI\！！Programming\C#\WebAPI\安全性\Example\MyExample\WebApi_Aut
 E:\Work\MyAPI\！！Programming\C#\WebAPI\安全性\Example\MyExample\WebApi_Authorization_Demo\WebApi_Authorization_Demo\obj\Debug\WebApi_Authorization_Demo.csproj.CoreCompileInputs.cache
 E:\Work\MyAPI\！！Programming\C#\WebAPI\安全性\Example\MyExample\WebApi_Authorization_Demo\WebApi_Authorization_Demo\obj\Debug\WebApi_Authorization_Demo.dll
 E:\Work\MyAPI\！！Programming\C#\WebAPI\安全性\Example\MyExample\WebApi_Authorization_Demo\WebApi_Authorization_Demo\obj\Debug\WebApi_Authorization_Demo.pdb
-E:\Work\MyAPI\！！Programming\C#\WebAPI\安全性\Example\MyExample\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\WebApi_Authorization_Demo.dll.CodeAnalysisLog.xml
-E:\Work\MyAPI\！！Programming\C#\WebAPI\安全性\Example\MyExample\WebApi_Authorization_Demo\WebApi_Authorization_Demo\bin\WebApi_Authorization_Demo.dll.lastcodeanalysissucceeded
